@@ -4,17 +4,17 @@ module.exports = {
   create: async ctx => {
     let { username, password, email } = ctx.request.body;
     let data = {
-      name,
-      surname,
-      phone,
-      birthdate
+      username,
+      password,
+      email
     };
 
-    if (!(name && surname && phone && birthdate)) {
+    if (!(username && password && email)) {
       return ctx.send("Wrong data provided");
     }
 
-    let user = await strapi.services.client.create(data);
-    ctx.send(data);
+    let dentist = await strapi.services.dentist.signup(data);
+    console.log(dentist)
+    ctx.send(dentist);
   }
 };

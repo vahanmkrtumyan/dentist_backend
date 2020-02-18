@@ -1,0 +1,43 @@
+{
+  "connection": "default",
+  "collectionName": "dentists",
+  "info": {
+    "name": "dentist"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "username": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "password": {
+      "type": "password",
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "unique": true
+    },
+    "externalId": {
+      "type": "string"
+    },
+    "provider": {
+      "type": "string"
+    },
+    "resetPasswordToken": {
+      "type": "string"
+    },
+    "active": {
+      "type": "boolean",
+      "default": true
+    },
+    "balance": {
+      "type": "biginteger",
+      "default": "0"
+    }
+  }
+}
