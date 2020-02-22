@@ -1,0 +1,24 @@
+{
+  "info": {
+    "name": "tooth"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Number": {
+      "type": "integer",
+      "required": true
+    },
+    "client": {
+      "model": "client",
+      "via": "teeth"
+    },
+    "Status": {
+      "type": "string"
+    }
+  },
+  "connection": "default",
+  "collectionName": "teeth"
+}

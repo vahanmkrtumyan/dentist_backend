@@ -16,16 +16,6 @@
       "configurable": false,
       "required": true
     },
-    "email": {
-      "type": "email",
-      "minLength": 6,
-      "configurable": false,
-      "required": true
-    },
-    "provider": {
-      "type": "string",
-      "configurable": false
-    },
     "password": {
       "type": "password",
       "minLength": 6,
@@ -37,21 +27,19 @@
       "configurable": false,
       "private": true
     },
-    "confirmed": {
-      "type": "boolean",
-      "default": false,
-      "configurable": false
-    },
-    "blocked": {
-      "type": "boolean",
-      "default": false,
-      "configurable": false
-    },
     "role": {
       "model": "role",
       "via": "users",
       "plugin": "users-permissions",
       "configurable": false
+    },
+    "email": {
+      "type": "email",
+      "minLength": 6,
+      "required": true
+    },
+    "provider": {
+      "type": "string"
     }
   }
 }

@@ -1,4 +1,6 @@
 {
+  "connection": "default",
+  "collectionName": "clients",
   "info": {
     "name": "Client"
   },
@@ -12,8 +14,19 @@
     },
     "lastname": {
       "type": "string"
+    },
+    "dentist": {
+      "model": "dentist"
+    },
+    "Birthday": {
+      "type": "date"
+    },
+    "Address": {
+      "type": "string"
+    },
+    "teeth": {
+      "via": "client",
+      "collection": "tooth"
     }
-  },
-  "connection": "default",
-  "collectionName": "clients"
+  }
 }

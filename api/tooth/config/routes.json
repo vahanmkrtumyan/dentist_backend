@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/teeth",
+      "handler": "tooth.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/teeth/count",
+      "handler": "tooth.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/teeth/:id",
+      "handler": "tooth.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/teeth",
+      "handler": "tooth.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/teeth/:id",
+      "handler": "tooth.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/teeth/:id",
+      "handler": "tooth.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

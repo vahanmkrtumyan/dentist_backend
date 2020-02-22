@@ -1,30 +1,27 @@
 "use strict";
 const shortid = require("shortid");
-const jwt = require("jsonwebtoken");
 const _ = require("lodash/core");
-require("dotenv").config({ path: "../.env" });
+// require("dotenv").config({ path: "../.env" });
 
 module.exports = {
-  signup: async data => {
+  create: async data => {
     let dentist = { ...data };
     dentist.externalId = shortid.generate();
-    dentist.password = await strapi.admin.services.auth.hashPassword(
-      data.password
-    );
     console.log({ dentist });
     try {
       let createdDentist = await strapi.query("dentist").create(dentist);
-      let token = jwt.sign(
-        _.pick(createdDentist, [
-          "username",
-          "externalId",
-          "email",
-          "active",
-          "balance"
-        ]),
-        "process.env.JWT_KEY"
-      );
-      return token;
+      return createdDentist;
+    } catch (e) {
+      console.log(e);
+    }
+  },
+
+  update: async (id, data) => {
+    try {
+      let createdDentist = await strapi
+        .query("dentist")
+        .update({ user: id }, data);
+      return createdDentist;
     } catch (e) {
       console.log(e);
     }
