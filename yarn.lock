@@ -8006,7 +8006,7 @@ sprintf-js@^1.1.1:
   resolved "https://registry.yarnpkg.com/sprintf-js/-/sprintf-js-1.1.2.tgz#da1765262bf8c0f571749f2ad6c26300207ae673"
   integrity sha512-VE0SOVEHCk7Qc8ulkWw3ntAzXuqf7S2lvwQaDLRnUeIEaKNQJzV6BwmLKhOqT61aGhfUMrXeaBk+oDGCzvhcug==
 
-sqlite3@latest:
+sqlite3@^4.1.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/sqlite3/-/sqlite3-4.1.1.tgz#539a42e476640796578e22d589b3283c28055242"
   integrity sha512-CvT5XY+MWnn0HkbwVKJAyWEMfzpAPwnTiB3TobA5Mri44SrTovmmh499NPQP+gatkeOipqPlBLel7rn4E/PCQg==
@@ -8398,7 +8398,7 @@ strapi-provider-upload-local@3.0.0-beta.18.7:
   resolved "https://registry.yarnpkg.com/strapi-provider-upload-local/-/strapi-provider-upload-local-3.0.0-beta.18.7.tgz#a71d4eb245b0cc514c58eafced81d5128ee0fe34"
   integrity sha512-kRPhoFqF2TB/bDQwepeRl6+6vAKamJBHdhmwYPDV7TCMVdyDScZU5+v4+uWrXlRP5XVKedCwR5bJhtxPzl4ogA==
 
-strapi-utils@3.0.0-beta.18.7:
+strapi-utils@3.0.0-beta.18.7, strapi-utils@^3.0.0-beta.18.7:
   version "3.0.0-beta.18.7"
   resolved "https://registry.yarnpkg.com/strapi-utils/-/strapi-utils-3.0.0-beta.18.7.tgz#e06063f98bf7c180c7108633d9b2580762a9fd54"
   integrity sha512-xS1NWvnSAECFUOr3sR8Eyw1RwylOn83uq1kRfpDrIxCiRBRfGvlv94mJLHhJHS+egd1LPJx/5t/EjQTXJ8WaCg==

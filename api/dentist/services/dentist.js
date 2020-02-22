@@ -1,6 +1,5 @@
 "use strict";
 const shortid = require("shortid");
-const _ = require("lodash/core");
 // require("dotenv").config({ path: "../.env" });
 
 module.exports = {

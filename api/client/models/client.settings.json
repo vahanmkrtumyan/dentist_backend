@@ -9,12 +9,6 @@
     "timestamps": true
   },
   "attributes": {
-    "firstname": {
-      "type": "string"
-    },
-    "lastname": {
-      "type": "string"
-    },
     "dentist": {
       "model": "dentist"
     },
@@ -25,8 +19,19 @@
       "type": "string"
     },
     "teeth": {
-      "via": "client",
-      "collection": "tooth"
+      "collection": "tooth",
+      "via": "client"
+    },
+    "phone": {
+      "type": "biginteger"
+    },
+    "firstName": {
+      "type": "string",
+      "required": true
+    },
+    "lastName": {
+      "type": "string",
+      "required": true
     }
   }
 }

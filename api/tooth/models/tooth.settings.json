@@ -1,4 +1,6 @@
 {
+  "connection": "default",
+  "collectionName": "teeth",
   "info": {
     "name": "tooth"
   },
@@ -12,13 +14,15 @@
       "required": true
     },
     "client": {
-      "model": "client",
-      "via": "teeth"
+      "via": "teeth",
+      "model": "client"
     },
     "Status": {
       "type": "string"
+    },
+    "histories": {
+      "via": "tooth",
+      "collection": "history"
     }
-  },
-  "connection": "default",
-  "collectionName": "teeth"
+  }
 }

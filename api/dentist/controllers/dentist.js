@@ -1,5 +1,4 @@
 "use strict";
-const axios = require("axios");
 
 module.exports = {
   create: async ctx => {

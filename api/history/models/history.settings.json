@@ -1,0 +1,23 @@
+{
+  "info": {
+    "name": "history"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "event": {
+      "type": "string"
+    },
+    "date": {
+      "type": "date"
+    },
+    "tooth": {
+      "model": "tooth",
+      "via": "histories"
+    }
+  },
+  "connection": "default",
+  "collectionName": "histories"
+}
