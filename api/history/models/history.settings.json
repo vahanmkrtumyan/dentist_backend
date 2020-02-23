@@ -1,4 +1,6 @@
 {
+  "connection": "default",
+  "collectionName": "histories",
   "info": {
     "name": "history"
   },
@@ -14,10 +16,8 @@
       "type": "date"
     },
     "tooth": {
-      "model": "tooth",
-      "via": "histories"
+      "via": "histories",
+      "model": "tooth"
     }
-  },
-  "connection": "default",
-  "collectionName": "histories"
+  }
 }

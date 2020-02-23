@@ -15,12 +15,9 @@
     "Birthday": {
       "type": "date"
     },
-    "Address": {
-      "type": "string"
-    },
     "teeth": {
-      "collection": "tooth",
-      "via": "client"
+      "via": "client",
+      "collection": "tooth"
     },
     "phone": {
       "type": "biginteger"
@@ -32,6 +29,9 @@
     "lastName": {
       "type": "string",
       "required": true
+    },
+    "address": {
+      "type": "text"
     }
   }
 }

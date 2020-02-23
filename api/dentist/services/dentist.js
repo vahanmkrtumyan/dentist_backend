@@ -24,5 +24,14 @@ module.exports = {
     } catch (e) {
       console.log(e);
     }
+  },
+
+  delete: async id => {
+    try {
+      let createdDentist = await strapi.query("dentist").delete({ user: id });
+      return createdDentist;
+    } catch (e) {
+      console.log(e);
+    }
   }
 };

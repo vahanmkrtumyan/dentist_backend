@@ -9,20 +9,20 @@
     "timestamps": true
   },
   "attributes": {
-    "Number": {
-      "type": "integer",
-      "required": true
-    },
     "client": {
-      "via": "teeth",
-      "model": "client"
+      "model": "client",
+      "via": "teeth"
     },
     "Status": {
       "type": "string"
     },
     "histories": {
-      "via": "tooth",
-      "collection": "history"
+      "collection": "history",
+      "via": "tooth"
+    },
+    "number": {
+      "required": true,
+      "type": "integer"
     }
   }
 }

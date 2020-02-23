@@ -14,7 +14,6 @@ module.exports = {
     }
 
     let dentist = await strapi.services.dentist.create(data);
-    console.log(dentist);
     ctx.send(dentist);
   },
 
