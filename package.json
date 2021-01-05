@@ -11,7 +11,7 @@
   },
   "devDependencies": {},
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "dotenv": "^8.2.0",
     "jsonwebtoken": "^8.5.1",
     "knex": "<0.20.0",
